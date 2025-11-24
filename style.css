@@ -1,0 +1,133 @@
+/* Estilos gerais do corpo da página */
+body {
+    background-color: rgb(3, 129, 60); /* Cor de fundo principal (verde) */
+    font-family: sans-serif; /* Fonte padrão para a página */
+    color: white; /* Cor padrão do texto */
+    margin: 0; /* Remove margens externas */
+    padding: 0; /* Remove preenchimento interno */
+    display: flex; /* Usa o modelo de layout Flexbox */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    min-height: 100vh; /* Altura mínima igual à altura da tela */
+}
+
+/* Cabeçalho da página */
+#page-header {
+    background-color: #02592e; /* Fundo verde escuro, igual ao rodapé */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto ao centro */
+    width: 100%; /* Ocupa toda a largura da página */
+}
+
+/* Título principal */
+h1 {
+    margin: 0; /* Remove a margem padrão do H1 */
+}
+
+/* --- Container de Busca Melhorado --- */
+#search-container {
+    background-color: #02592e; /* Fundo escuro para criar uma seção coesa */
+    padding: 30px; /* Espaçamento interno generoso */
+    border-radius: 8px; /* Bordas arredondadas para um visual suave */
+    width: 90%; /* Largura relativa à página */
+    max-width: 500px; /* Largura máxima para telas grandes */
+    margin-top: 20px; /* Espaço acima do container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidade */
+    display: flex; /* Alinha os itens internos (input e botão) */
+    gap: 10px; /* Espaço entre o input e o botão */
+}
+
+/* Campo de texto da busca */
+#search-input {
+    flex-grow: 1; /* Permite que o campo cresça e ocupe o espaço disponível */
+    padding: 10px; /* Espaçamento interno */
+    border: 2px solid transparent; /* Borda inicial transparente para não mover o layout */
+    border-radius: 5px; /* Bordas arredondadas */
+    outline: none; /* Remove o contorno padrão ao focar */
+    transition: border-color 0.3s; /* Animação suave da cor da borda */
+}
+
+/* Efeito ao focar no campo de texto */
+#search-input:focus {
+    border-color: white; /* Mostra uma borda branca ao focar, usando cor da paleta */
+}
+
+/* Botão de busca */
+#search-button {
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #02592e; /* Cor de fundo (verde escuro) */
+    color: white; /* Cor do texto */
+    border: 1px solid white; /* Borda branca para destaque */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Ícone de mão ao passar o mouse */
+    transition: background-color 0.3s, color 0.3s; /* Animação suave para o efeito hover */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+#search-button:hover {
+    background-color: white; /* Inverte a cor de fundo */
+    color: #02592e; /* Inverte a cor do texto */
+}
+
+/* Conteúdo principal da página */
+#main-content {
+    padding: 20px; /* Espaçamento interno */
+    width: 100%; /* Ocupa toda a largura */
+    text-align: center; /* Alinha o texto ao centro */
+    flex-grow: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
+}
+
+/* Rodapé da página */
+#page-footer {
+    background-color: #02592e; /* Fundo verde escuro */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto ao centro */
+    width: 100%; /* Ocupa toda a largura */
+    margin-top: auto; /* Empurra o rodapé para o fim da página em conteúdo curto */
+}
+
+/* Lista dentro do rodapé */
+#page-footer ul {
+    list-style: none; /* Remove os marcadores de lista */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimento */
+}
+
+/* Links dentro do rodapé */
+#page-footer a {
+    color: white; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Efeito ao passar o mouse sobre o link do rodapé */
+#page-footer a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+/* Botões principais do topo */
+#top-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+/* Verde claro + texto branco */
+.btn-primary {
+  background-color: #7aa34a; /* verde mais claro */
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
